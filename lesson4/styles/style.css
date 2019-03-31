@@ -1,0 +1,124 @@
+body {
+    background-color: #f8f8f8;
+}
+
+/*
+8. *На странице просмотра товара каталога, в каждом параграфе сделать первую
+букву первого слова другим шрифтом и размером.
+*/
+.product-p:first-letter {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: crimson;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu > li > a{
+    color: rgb(122, 90, 29);
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/*
+1. При наведении на меню сайта цвет ссылок должен меняться на произвольный.
+*/
+.menu > li > a:hover {
+    color: #3b8f19;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.product-img {
+    border: 5px solid powderblue;
+}
+
+/*
+7. *При наведении на изображения в разделе просмотра товара, подробного описания,
+необходимо сделать так, чтобы рамка исчезала, но сама картинка при этом не
+должна смещаться, т.е должна оставаться неподвижной.
+*/
+.product-img:hover {
+    border: none;
+    margin: 5px;
+}
+
+.itemDescripton {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+table[class="itemDescripton"] {
+    border-collapse: collapse;
+}
+
+table[class="itemDescripton"] td, th {
+    border: 1px solid brown;
+    padding: 4px;
+}
+
+/*
+11. * Задать высоту для верхней строки таблицы, отличную от всех остальных.
+*/
+.char-table-head {
+    height: 50px;
+}
+
+#shortDescrition {
+    color: #707070;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: italic;
+}
+
+#fullDescription {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+#productProperties {
+    color: #556e18;
+    font-size: 18px;
+    font-style: oblique;
+    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+    list-style-image: url('images/lotus.png')
+}
+
+.inputContact, #useremail{
+    width: 50%;
+    height: 1.4em;
+    color: #3e503e;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*
+5. При вводе текста в текстовые поля каждое слово должно начинаться с большой
+буквы, даже если пользователь будет вводить с маленькой буквы.
+*/
+.inputContact {
+    text-transform: capitalize;
+}
+
+#texttheme{
+    height: 14em;
+}
+
+/*
+4. При вводе текста в поле “Email” на странице контактной информации поменять
+цвет текста и цвет поля.
+*/
+#useremail:focus {
+    color: teal;
+    background-color: seashell;
+}
