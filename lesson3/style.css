@@ -1,0 +1,118 @@
+/*
+1. Создать файл style.css, в котором будут храниться все стили вашей работы. Подключить
+этот файл ко всем страницам.
+2. В качестве фона на всех страницах установить цвет #f8f8f8.
+*/
+body {
+    background-color: #f8f8f8;
+}
+
+
+/*
+3. Меню сайта:
+a. Для всех ссылок меню задать определѐнный стиль. (Цвет текста, размер шрифта,
+начертание шрифта и т.д.)
+
+*/
+#menu > li > a{
+    color: rgb(122, 90, 29);
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/*
+b. Убрать маркеры списка.
+*/
+#menu {
+    list-style-type: none;
+}
+
+
+/*
+4. Страница “Подробное описание товара”
+a. Заголовки (Краткое описание товара, Характеристики, Подробное описание товара)
+i. Цвет текста черный.
+ii. Размер шрифта 18px;
+iii. Насыщенность шрифта 400. (font-weight);
+iv. установите цвет фона #eaeaea;
+*/
+
+.itemDescripton {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+/*
+b. Для текста краткого описания товар.
+i. Цвет текста #707070;
+ii. Размер шрифта 14px.
+iii. Начертание шрифта italic. (font-style)
+iv. Высоту текста 16px (line-height);
+*/
+#shortDescrition {
+    color: #707070;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: italic;
+}
+
+/*
+c. Для текста подробного описания товара:
+i. Цвет текста #484343.
+ii. Размер шрифта 16px.
+iii. Насыщенность шрифта 400. (font-weight);
+iv. Высоту текста 24px (line-height);
+v. Расположение текста по левому краю (text-align)
+*/
+#fullDescription {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/*
+d. Для списка внурти подраздела Характеристики товара
+i. задайте списку стили, отличные от всего остального текста.
+ii. *установите в качестве маркеров произвольные изображения
+*/
+#productProperties {
+    color: #556e18;
+    font-size: 18px;
+    font-style: oblique;
+    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+    list-style-image: url('images/lotus.png')
+}
+
+/*
+5. Странице “Контакты”:
+a. Задать значения ширины и высоты для полей ввода.
+b. Задать стили для текста, внутри полей input. ( Цвет текста, размер шрифта и т.д.).
+c. Следите за тем, чтобы на странице всѐ выглядело гармонично, не выбирайте
+слишком резких цветов.
+*/
+.inputContact {
+    width: 30%;
+    height: 1.4em;
+    color: #3e503e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#texttheme{
+    width: 30%;
+    height: 14em;
+}
+
+#inputForm > input {
+    color: rgb(99, 9, 72);
+    font-size: 17px;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
